@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import logo from '../images/logo1.png'
 import logo from '../images/logoEER.svg'
 import {FaAlignRight} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
@@ -25,7 +24,7 @@ handleToggle = () =>{
                 </div>
                 <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"}>
                     <li>
-                        <Link to="/">Properties</Link>
+                        <Link to="/properties">Properties</Link>
                     </li>
                     <li>
                         <Link to="/">About Us</Link>

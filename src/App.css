@@ -4,7 +4,13 @@
     box-sizing: border-box;
   }
   :root {
-    --primaryColor: #C8202F;
+    /* Empire Eleven Realty Logo Colors */
+    --EERGray: #B8B8C8;
+    --EERRed: #C8202F;
+    --EERBlue: #272160;
+
+
+    --primaryColor: #B8B8C8;
     --mainWhite: #fff;
     --offWhite: #fafafa;
     --mainBlack: #222;
@@ -133,7 +139,7 @@
     letter-spacing: var(--mainSpacing);
   }
   .nav-links a:hover {
-    color: var(--EERGray);
+    color: var(--primaryColor);
   }
   
   .show-nav {
