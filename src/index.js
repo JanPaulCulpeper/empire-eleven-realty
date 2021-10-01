@@ -4,11 +4,16 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router} from 'react-router-dom'
+import {PropertyProvider} from './context';
 
 ReactDOM.render(
+  <PropertyProvider>
+
+ 
   <Router>
     <App />
-  </Router>,
+  </Router>
+  </PropertyProvider>,
   document.getElementById('root')
 );
 
