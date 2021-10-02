@@ -1,35 +1,36 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import defaultImg from '../images/room-1.jpeg';
+import React from "react";
+import { Link } from "react-router-dom";
+import defaultImg from "../images/room-1.jpeg";
+import PropTypes from "prop-types";
+import { memo } from "react";
 
-export default function Property({property}) {
-    // eslint-disable-next-line
-const{name,sp,images,price,status,capacity} = property;
-
-    return (
-        <article className="property">
-        <div className="img-container"> 
-        <img src={images[0] || defaultImg} alt="single property"/>
+const Property = memo(({ property }) => {
+  const { name, sp, images, price } = property;
+  
+  
+  return (
+    <article className="property">
+      <div className="img-container">
+        <img src={images[0] || defaultImg} alt="single property" />
         <div className="price-top">
-            <h6>${price}</h6>
-            <p> per night</p>
-            </div>
-{/* //Add status to top-left of property listing
-         {/* <div className="status-top">
-            {/* <h6>{status}</h6> */}
-            {/* </div> */} 
-
-{/*slug = sp */}
-        <Link to={`/properties/${sp}`} 
-        className="btn-primary property-link ">
-          Features
-        </Link>
+          <h6>${price}</h6>
+          <p>per night</p>
         </div>
-        <p className="property-info"> {name}</p>
-        {/* <p className="property-bed-info"> {capacity}</p>
-        <p className="property-bath-info"> {capacity}</p> */}
-        </article>
-    );
-    
+        <Link to={`/properties/${sp}`} className="btn-primary property-link">
+          features
+        </Link>
+      </div>
+      <p className="property-info">{name}</p>
+    </article>
+  );
+});
 
-}
+Property.propTypes = {
+  property: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    sp: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    price: PropTypes.number.isRequired
+  })
+};
+export default Property;

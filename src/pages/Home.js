@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 import Services from '../components/Services'
 import {Link} from 'react-router-dom'
 import FeatureProperties from '../components/FeatureProperties'
-
+import PropertiesContainer from '../components/PropertiesContainer'
 const Home = () => {
     return (
         <>
@@ -17,8 +17,9 @@ const Home = () => {
         </Hero>
         <Services/>
         <FeatureProperties/>
+        <PropertiesContainer/>
         </>
     );
-}
+};
 
 export default Home
