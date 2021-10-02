@@ -4,7 +4,7 @@ import defaultImg from '../images/room-1.jpeg';
 
 export default function Property({property}) {
     // eslint-disable-next-line
-const{name,sp,images,price,status} = property;
+const{name,sp,images,price,status,capacity} = property;
 
     return (
         <article className="property">
@@ -25,6 +25,9 @@ const{name,sp,images,price,status} = property;
           Features
         </Link>
         </div>
+        <p className="property-info"> {name}</p>
+        {/* <p className="property-bed-info"> {capacity}</p>
+        <p className="property-bath-info"> {capacity}</p> */}
         </article>
     );
     
