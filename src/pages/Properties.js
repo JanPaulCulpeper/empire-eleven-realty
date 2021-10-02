@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 function Properties() {
     return (
-        <Hero hero="roomsHero"> 
+        <Hero hero="propertiesHero"> 
             <Banner title="Our Properties">
                 <Link to='/' className="btn-primary">
                     Return Home

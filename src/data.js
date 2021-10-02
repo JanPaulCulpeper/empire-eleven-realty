@@ -23,7 +23,7 @@ export default [
     },
     fields: {
       name: "single economy",
-      slug: "single-economy",
+      sp: "single-economy",
       type: "single",
       price: 100,
       size: 200,
@@ -80,7 +80,7 @@ export default [
     },
     fields: {
       name: "single basic",
-      slug: "single-basic",
+      sp: "single-basic",
       type: "single",
       price: 150,
       size: 250,
@@ -137,7 +137,7 @@ export default [
     },
     fields: {
       name: "single standard",
-      slug: "single-standard",
+      sp: "single-standard",
       type: "single",
       price: 250,
       size: 300,
@@ -194,7 +194,7 @@ export default [
     },
     fields: {
       name: "single deluxe",
-      slug: "single-deluxe",
+      sp: "single-deluxe",
       type: "single",
       price: 300,
       size: 400,
@@ -251,7 +251,7 @@ export default [
     },
     fields: {
       name: "double economy",
-      slug: "double-economy",
+      sp: "double-economy",
       type: "double",
       price: 200,
       size: 300,
@@ -308,7 +308,7 @@ export default [
     },
     fields: {
       name: "double basic",
-      slug: "double-basic",
+      sp: "double-basic",
       type: "double",
       price: 250,
       size: 350,
@@ -365,7 +365,7 @@ export default [
     },
     fields: {
       name: "double standard",
-      slug: "double-standard",
+      sp: "double-standard",
       type: "double",
       price: 300,
       size: 400,
@@ -422,10 +422,11 @@ export default [
     },
     fields: {
       name: "double deluxe",
-      slug: "double-deluxe",
+      sp: "double-deluxe",
       type: "double",
       price: 400,
       size: 500,
+      status: "SOLD",
       capacity: 2,
       pets: true,
       breakfast: true,
@@ -479,7 +480,7 @@ export default [
     },
     fields: {
       name: "family economy",
-      slug: "family-economy",
+      sp: "family-economy",
       type: "family",
       price: 300,
       size: 500,
@@ -536,7 +537,7 @@ export default [
     },
     fields: {
       name: "family basic",
-      slug: "family-basic",
+      sp: "family-basic",
       type: "family",
       price: 350,
       size: 550,
@@ -593,7 +594,7 @@ export default [
     },
     fields: {
       name: "family standard",
-      slug: "family-standard",
+      sp: "family-standard",
       type: "family",
       price: 400,
       size: 600,
@@ -650,9 +651,10 @@ export default [
     },
     fields: {
       name: "family deluxe",
-      slug: "family-deluxe",
+      sp: "family-deluxe",
       type: "family",
       price: 500,
+      status: "FOR RENT",
       size: 700,
       capacity: 6,
       pets: true,
@@ -707,10 +709,11 @@ export default [
     },
     fields: {
       name: "presidential",
-      slug: "presidential-room",
+      sp: "presidential-room",
       type: "presidential",
       price: 600,
       size: 1000,
+      status: "FOR SALE",
       capacity: 10,
       pets: true,
       breakfast: true,
@@ -730,7 +733,7 @@ export default [
         {
           fields: {
             file: {
-              url: room1
+             url: room1
             }
           }
         },

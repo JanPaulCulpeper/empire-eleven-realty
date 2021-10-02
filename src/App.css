@@ -167,14 +167,14 @@
   /* end of navbar */
   /* Hero */
   .defaultHero,
-  .roomsHero {
+  .propertiesHero {
     min-height: calc(100vh - 66px);
     background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .roomsHero {
+  .propertiesHero {
     background-image: url("./images/room-2.jpeg");
     min-height: 60vh;
   }
@@ -282,10 +282,10 @@
   /*end of services */
   /* featured rooms */
   
-  .featured-rooms {
+  .featured-properties {
     padding: 5rem 0;
   }
-  .featured-rooms-center {
+  .featured-properties-center {
     width: 80vw;
     margin: 0 auto;
     display: grid;
@@ -294,31 +294,35 @@
     grid-column-gap: 40px;
   }
   @media screen and (min-width: 776px) {
-    .featured-rooms-center {
+    .featured-properties-center {
       width: 90vw;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     }
   }
   @media screen and (min-width: 992px) {
-    .featured-rooms-center {
+    .featured-properties-center {
       width: 95vw;
       max-width: 1170px;
     }
   }
   /* end pf featured rooms */
   /* room */
-  .room {
+  .property {
     box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
+    border-radius:1em;
   }
-  .room:hover {
+  .property:hover {
     box-shadow: var(--darkShadow);
+    border-radius:1em;
   }
   
   .img-container {
+    border-radius:1em;
     position: relative;
   }
   .img-container img {
+    border-radius:1em;
     width: 100%;
     display: block;
     transition: var(--mainTransition);
@@ -331,6 +335,7 @@
     color: var(--mainWhite);
     padding: 0.3rem 0.6rem 0.5rem;
     border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     font-size: 0.5rem;
     text-align: center;
     transition: var(--mainTransition);
@@ -341,7 +346,15 @@
     font-weight: 300;
     letter-spacing: var(--mainSpacing);
   }
-  .room-link {
+
+  /* .status-top h6 {
+    margin-top: center;
+    margin-bottom: 0;
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: var(--mainSpacing);
+  } */
+  .property-link {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -357,10 +370,10 @@
   .img-container:hover .price-top {
     opacity: 0;
   }
-  .img-container:hover .room-link {
+  .img-container:hover .property-link {
     transform: translate(-50%, -50%) scale(1);
   }
-  .room-info {
+  .property-info {
     background: var(--darkGrey);
     text-transform: capitalize;
     padding: 0.5rem 0;
@@ -371,10 +384,10 @@
   /* end of room  */
   /* single room*/
   
-  .single-room {
+  .single-property {
     padding: 5rem 0 0 0;
   }
-  .single-room-images {
+  .single-property-images {
     width: 80vw;
     margin: 0 auto;
     display: grid;
@@ -382,11 +395,11 @@
     grid-row-gap: 2rem;
     grid-column-gap: 50px;
   }
-  .single-room-images img {
+  .single-property-images img {
     width: 100%;
     display: block;
   }
-  .single-room-info {
+  .single-property-info {
     width: 80vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -412,11 +425,11 @@
   .info h6 {
     font-weight: 300;
   }
-  .room-extras {
+  .property-extras {
     width: 80vw;
     margin: 0 auto 3rem auto;
   }
-  .room-extras h6 {
+  .property-extras h6 {
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
   }
@@ -428,13 +441,13 @@
     grid-row-gap: 1rem;
   }
   @media screen and (min-width: 992px) {
-    .single-room-images,
-    .single-room-info,
-    .room-extras {
+    .single-property-images,
+    .single-property-info,
+    .property-extras {
       width: 95vw;
       max-width: 1170px;
     }
-    .single-room-info {
+    .single-property-info {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 2rem;
@@ -445,10 +458,10 @@
   }
   /* end of single room*/
   /* roomlist */
-  .roomslist {
+  .propertieslist {
     padding: 5rem 0;
   }
-  .roomslist-center {
+  .propertieslist-center {
     width: 80vw;
     margin: 0 auto;
     display: grid;
@@ -458,12 +471,12 @@
   }
   
   @media screen and (min-width: 776px) {
-    .roomslist-center {
+    .propertieslist-center {
       width: 90vw;
     }
   }
   @media screen and (min-width: 992px) {
-    .roomslist-center {
+    .propertieslist-center {
       width: 95vw;
       max-width: 1170px;
     }
