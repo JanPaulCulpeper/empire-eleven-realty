@@ -20,8 +20,6 @@ const PropertyContext = React.createContext();
         maxPrice: 0,
         minSize: 0,
         maxSize: 0,
-        breakfast: false,
-        pets: false
       };
 
            componentDidMount(){
@@ -29,7 +27,9 @@ const PropertyContext = React.createContext();
                let properties = this.formatData(items)
                let featuredProperties = properties.filter(prope => prope.featured === true);
                let maxPrice = Math.max(...properties.map(item => item.price));
-               let maxSize = Math.max(...properties.map(item => item.size));
+               let maxRooms = Math.max(...properties.map(item => item.size));
+               let maxBathRooms = Math.max(...properties.map(item => item.size));
+               
                this.setState({
                    properties,
                    featuredProperties,
@@ -37,7 +37,8 @@ const PropertyContext = React.createContext();
                    loading: false,
                    price: maxPrice,
                    maxPrice,
-                   maxSize
+                   maxRooms,
+                   maxBathRooms
                });
            }
 
@@ -74,41 +75,29 @@ const PropertyContext = React.createContext();
             let {
               properties,
               type,
-              capacity,
               price,
-              minSize,
-              maxSize,
-              breakfast,
-              pets
+              rooms,
+              bathRooms
             } = this.state;
         
             let tempProperties = [...properties];
             // transform values
-            // get capacity
-            capacity = parseInt(capacity);
             price = parseInt(price);
             // filter by type
             if (type !== "all") {
               tempProperties = tempProperties.filter(property => property.type === type);
             }
-            // filter by capacity
-            if (capacity !== 1) {
-              tempProperties = tempProperties.filter(property => property.capacity >= capacity);
-            }
+            
             // filter by price
             tempProperties = tempProperties.filter(property => property.price <= price);
             //filter by size
-            tempProperties = tempProperties.filter(
-              property => property.size >= minSize && property.size <= maxSize
-            );
-            //filter by breakfast
-            if (breakfast) {
-              tempProperties = tempProperties.filter(property => property.breakfast === true);
-            }
-            //filter by pets
-            if (pets) {
-              tempProperties = tempProperties.filter(property => property.pets === true);
-            }
+
+            
+            tempProperties = tempProperties.filter(property => property.size <= rooms);
+            
+
+            tempProperties = tempProperties.filter(property => property.size <=  bathRooms);
+           
             this.setState({
               sortedProperties: tempProperties
             });

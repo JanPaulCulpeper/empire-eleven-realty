@@ -14,14 +14,15 @@ const PropertiesFilter = ({ properties }) => {
   const {
     handleChange,
     type,
-    capacity,
     price,
     minPrice,
     maxPrice,
-    minSize,
-    maxSize,
-    breakfast,
-    pets
+    rooms,
+    minRooms,
+    maxRooms,
+    bathRooms,
+    minBathRooms,
+    maxBathRooms
   } = context;
 
   // get unique types
@@ -34,13 +35,8 @@ const PropertiesFilter = ({ properties }) => {
       {item}
     </option>
   ));
-  // get unique capacity
-  let people = getUnique(properties, "capacity");
-  people = people.map((item, index) => (
-    <option key={index} value={item}>
-      {item}
-    </option>
-  ));
+  
+  
   return (
     <section className="filter-container">
       <Title title="search Properties" />
@@ -59,20 +55,20 @@ const PropertiesFilter = ({ properties }) => {
           </select>
         </div>
         {/* end of select type */}
-        {/* guests  */}
-        <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
-          <select
-            name="capacity"
-            id="capacity"
-            onChange={handleChange}
-            className="form-control"
-            value={capacity}
-          >
-            {people}
-          </select>
-        </div>
-        {/* end of guests */}
+      {/* status */}
+      <div className="form-group">
+            <label htmlFor="type">Property Status</label>
+            <select
+              name="type"
+              id="type"
+              onChange={handleChange}
+              className="form-control"
+              value={type}
+            >
+              {types}
+            </select>
+          </div>
+          {/* end of select type */}
         {/* Property price */}
         <div className="form-group">
           <label htmlFor="price">Property price ${price}</label>
@@ -88,50 +84,35 @@ const PropertiesFilter = ({ properties }) => {
           />
         </div>
         {/* end of Property price*/}
-        {/* size */}
+        {/* Rooms */}
         <div className="form-group">
-          <label htmlFor="price">Property size </label>
-          <div className="size-inputs">
-            <input
-              type="number"
-              name="minSize"
-              value={minSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-            <input
-              type="number"
-              name="maxSize"
-              value={maxSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-          </div>
+        <label htmlFor="price">Rooms {rooms}</label>
+          <input
+            type="range"
+            name="rooms"
+            multiple
+            min={minRooms}
+            max={maxRooms}
+            id="rooms"
+            value={rooms}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        {/* end of select type */}
-        {/* extras */}
-        <div className="form-group">
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">breakfast</label>
-          </div>
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="pets"
-              checked={pets}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">pets</label>
-          </div>
+    {/* Bath Rooms */}
+    <div className="form-group">
+        <label htmlFor="price">Bath Rooms {bathRooms}</label>
+          <input
+            type="range"
+            name="bathRooms"
+            min={minBathRooms}
+            max={maxBathRooms}
+            id="bathRooms"
+            value={bathRooms}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        {/* end of extras type */}
       </form>
     </section>
   );
