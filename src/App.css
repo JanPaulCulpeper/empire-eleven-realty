@@ -601,3 +601,13 @@
     }
   }
   /* end of rooms fitler*/
+
+  .about{
+    height: 600px;
+    background-color: #8b4f4f;
+  }
+  .reviews{
+    height: 300px;
+    background-color: #fff;
+  }
+ 

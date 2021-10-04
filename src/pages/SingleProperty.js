@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 import { PropertyContext } from '../context'
 import StyledHero from '../components/StyledHero'
 
-
-
 export default class SingleProperty extends Component {
 
     constructor(props)
