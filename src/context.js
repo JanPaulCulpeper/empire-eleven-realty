@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import items from './data';
+//import items from './data';
+import Client from './Contentful';
+
 
 const PropertyContext = React.createContext();
 //<propertyContext.Provider value={}
@@ -24,21 +26,34 @@ const PropertyContext = React.createContext();
         pets: false
       };
 
+  getData = async () => {
+    try {
+      let response = await Client.getEntries({
+        content_type: "property"
+      });
+      let properties = this.formatData(response.items);
+
+
+      let featuredProperties = properties.filter(room => room.featured === true);
+      
+      let maxPrice = Math.max(...properties.map(item => item.price));
+      let maxSize = Math.max(...properties.map(item => item.size));
+      this.setState({
+        properties,
+        featuredProperties,
+        sortedRooms: properties,
+        loading: false,
+        
+        price: maxPrice,
+        maxPrice,
+        maxSize
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
            componentDidMount(){
-               
-               let properties = this.formatData(items)
-               let featuredProperties = properties.filter(prope => prope.featured === true);
-               let maxPrice = Math.max(...properties.map(item => item.price));
-               let maxSize = Math.max(...properties.map(item => item.size));
-               this.setState({
-                   properties,
-                   featuredProperties,
-                   sortedProperties: properties, 
-                   loading: false,
-                   price: maxPrice,
-                   maxPrice,
-                   maxSize
-               });
+               this.getData()
            }
 
            formatData(items){

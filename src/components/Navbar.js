@@ -15,7 +15,7 @@ handleToggle = () =>{
             <div className="nav-center">
                 <div className="nav-header">
                     <Link  to="/">
-                        <img className="logo" src={logo} alt="Empire Eleven Realty Logo"/>
+                        <img className="logo" src={logo} alt="Empire Eleven Realty Logo" height="70"/>
                     </Link>
                     <button onClick={this.handleToggle} type="button" className="nav-btn">
 
