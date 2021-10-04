@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import defaultImg from "../images/room-1.jpeg";
 import PropTypes from "prop-types";
 import { memo } from "react";
+import { FaBed, FaBath, FaRulerCombined } from 'react-icons/fa'
 
 const Property = memo(({ property }) => {
-  const { name, sp, images, price } = property;
+  const { name, sp, images, price, capacity } = property;
   
   
   return (
@@ -21,6 +22,32 @@ const Property = memo(({ property }) => {
         </Link>
       </div>
       <p className="property-info">{name}</p>
+      <div className="columns">
+                <div className="column-rooms">
+                    <div className="room-count">
+                        <h6>{capacity}</h6>
+                    </div>
+                    <div className="room-icon">
+                        <h6><FaBed /></h6>
+                    </div>
+                </div>
+                <div className="column-bath">
+                    <div className="bath-count">
+                        <h6>{capacity} </h6>
+                    </div>
+                    <div className="bath-icon">
+                        <h6><FaBath /></h6>
+                    </div>
+                </div>
+                <div className="column-sqft">
+                    <div className="sqft-count">
+                        <h6>{capacity}  </h6>
+                    </div>
+                    <div className="sqft-icon">
+                        <h6><FaRulerCombined /></h6>
+                    </div>
+                </div>
+            </div>
     </article>
   );
 });

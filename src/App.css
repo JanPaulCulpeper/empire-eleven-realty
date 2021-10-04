@@ -58,7 +58,7 @@
   h6 {
     font-size: 1em;
     font-weight: bold;
-    margin-bottom: 1.5em;
+    margin-bottom: 0;
   }
   
   .btn-primary {
@@ -382,6 +382,45 @@
     font-weight: 700;
     letter-spacing: var(--mainSpacing);
   }
+  .columns{
+    /* height: 20px; */
+    border-radius: 10px;
+    /* border: 1px solid #000000; */
+    display: flex;
+   justify-content:space-around;
+  
+  }
+  
+  .room-count{
+    /* border: 1px solid #000000; */
+  
+    display: flex;
+    justify-content:space-around;
+  }
+  .room-icon{
+    /* border: 1px solid #000000; */
+  
+    display: flex;
+    justify-content:space-around;
+  }
+  .bath-count{
+    display: flex;
+    justify-content:space-around;
+  }
+  .bath-icon{
+    display: flex;
+    justify-content:space-around;
+  }
+  .sqft-count{
+    display: flex;
+    justify-content:space-around;
+  }
+  .sqft-icon{
+    display: flex;
+    justify-content:space-around;
+  }
+
+
   /* .property-bed-info {
     background: white;
     border-radius: 1em;
