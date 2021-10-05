@@ -16,15 +16,14 @@ const PropertyContext = React.createContext();
         featuredProperties: [],
         loading: true,
         type: "all",
-        capacity: 1,
+        status: "all",
         price: 0,
         minPrice: 0,
         maxPrice: 0,
-        minSize: 0,
-        maxSize: 0,
-        breakfast: false,
-        pets: false
-      };
+        bathRooms: "all",
+        bedRooms: "all",
+        city: "all"
+    }
 
   getData = async () => {
     try {
@@ -41,7 +40,7 @@ const PropertyContext = React.createContext();
       this.setState({
         properties,
         featuredProperties,
-        sortedRooms: properties,
+        sortedProperties: properties,
         loading: false,
         
         price: maxPrice,
@@ -89,41 +88,38 @@ const PropertyContext = React.createContext();
             let {
               properties,
               type,
-              capacity,
               price,
-              minSize,
-              maxSize,
-              breakfast,
-              pets
+              city,
+              bedRooms,
+              bathRooms,
+              status
             } = this.state;
         
             let tempProperties = [...properties];
             // transform values
-            // get capacity
-            capacity = parseInt(capacity);
+            
             price = parseInt(price);
             // filter by type
             if (type !== "all") {
               tempProperties = tempProperties.filter(property => property.type === type);
             }
-            // filter by capacity
-            if (capacity !== 1) {
-              tempProperties = tempProperties.filter(property => property.capacity >= capacity);
-            }
             // filter by price
             tempProperties = tempProperties.filter(property => property.price <= price);
-            //filter by size
-            tempProperties = tempProperties.filter(
-              property => property.size >= minSize && property.size <= maxSize
-            );
-            //filter by breakfast
-            if (breakfast) {
-              tempProperties = tempProperties.filter(property => property.breakfast === true);
+
+            if (city !== "all") {
+              tempProperties = tempProperties.filter(property => property.city === city);
             }
-            //filter by pets
-            if (pets) {
-              tempProperties = tempProperties.filter(property => property.pets === true);
+            
+            if (bathRooms !== "all") {
+              tempProperties = tempProperties.filter(property => property.bathRooms === bathRooms);
             }
+            if (bedRooms !== "all") {
+              tempProperties = tempProperties.filter(property => property.bedRooms === bedRooms);
+            }
+            if (status!== "all") {
+              tempProperties = tempProperties.filter(property => property.status === status);
+            }
+            
             this.setState({
               sortedProperties: tempProperties
             });

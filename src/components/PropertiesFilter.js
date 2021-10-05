@@ -4,6 +4,7 @@ import { PropertyContext } from "../context";
 import Title from "./Title"
 
 
+
 const getUnique = (items, value) => {
   return [...new Set(items.map(item => item[value]))];
 };
@@ -14,33 +15,56 @@ const PropertiesFilter = ({ properties }) => {
   const {
     handleChange,
     type,
-    capacity,
+    status,
     price,
     minPrice,
     maxPrice,
-    minSize,
-    maxSize,
-    breakfast,
-    pets
+    bedRooms,
+    bathRooms,
+    city
+    
   } = context;
 
   // get unique types
   let types = getUnique(properties, "type");
+  let statuss = getUnique(properties, "status")
+  let bedRoomss = getUnique(properties, "bedRooms")
+  let bathRoomss = getUnique(properties, "bathRooms")
+  let cities = getUnique(properties, "city")
   // add all
   types = ["all", ...types];
+  statuss = ["all", ...statuss];
+  bedRoomss = ["all", ...bedRoomss];
+  bathRoomss = ["all", ...bathRoomss];
+  cities = ["all", ...cities];
   // map to jsx
   types = types.map((item, index) => (
     <option key={index} value={item}>
       {item}
     </option>
   ));
-  // get unique capacity
-  let people = getUnique(properties, "capacity");
-  people = people.map((item, index) => (
+  statuss = statuss.map((item, index) => (
     <option key={index} value={item}>
       {item}
     </option>
   ));
+  bedRoomss = bedRoomss.map((item, index) => (
+    <option key={index} value={item}>
+      {item}
+    </option>
+  ));
+  bathRoomss = bathRoomss.map((item, index) => (
+    <option key={index} value={item}>
+      {item}
+    </option>
+  ));
+  cities = cities.map((item, index) => (
+    <option key={index} value={item}>
+      {item}
+    </option>
+  ));
+  const commaNumber = require('comma-number')
+  
   return (
     <section className="filter-container">
       <Title title="search Properties" />
@@ -59,23 +83,65 @@ const PropertiesFilter = ({ properties }) => {
           </select>
         </div>
         {/* end of select type */}
-        {/* guests  */}
+        {/* Status  */}
         <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
+          <label htmlFor="status">Status</label>
           <select
-            name="capacity"
-            id="capacity"
+            name="status"
+            id="status"
             onChange={handleChange}
             className="form-control"
-            value={capacity}
+            value={status}
           >
-            {people}
+            {statuss}
           </select>
         </div>
-        {/* end of guests */}
+        {/* end of status */}
+        {/* BedRooms  */}
+        <div className="form-group">
+          <label htmlFor="bedRooms">Bed Rooms</label>
+          <select
+            name="bedRooms"
+            id="bedRooms"
+            onChange={handleChange}
+            className="form-control"
+            value={bedRooms}
+          >
+            {bedRoomss}
+          </select>
+        </div>
+        {/* end of BedRooms */}
+        {/* BathRooms  */}
+        <div className="form-group">
+          <label htmlFor="bathRooms">Bath Rooms</label>
+          <select
+            name="bathRooms"
+            id="bathRooms"
+            onChange={handleChange}
+            className="form-control"
+            value={bathRooms}
+          >
+            {bathRoomss}
+          </select>
+        </div>
+        {/* end of BathRooms */}
+        {/* city */}
+        <div className="form-group">
+          <label htmlFor="city">City</label>
+          <select
+            name="city"
+            id="city"
+            onChange={handleChange}
+            className="form-control"
+            value={city}
+          >
+            {cities}
+          </select>
+        </div>
+        {/* end of City */}
         {/* Property price */}
         <div className="form-group">
-          <label htmlFor="price">Property price ${price}</label>
+          <label htmlFor="price">Price ${commaNumber(price)}</label>
           <input
             type="range"
             name="price"
@@ -88,50 +154,8 @@ const PropertiesFilter = ({ properties }) => {
           />
         </div>
         {/* end of Property price*/}
-        {/* size */}
-        <div className="form-group">
-          <label htmlFor="price">Property size </label>
-          <div className="size-inputs">
-            <input
-              type="number"
-              name="minSize"
-              value={minSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-            <input
-              type="number"
-              name="maxSize"
-              value={maxSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-          </div>
-        </div>
-        {/* end of select type */}
-        {/* extras */}
-        <div className="form-group">
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">breakfast</label>
-          </div>
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="pets"
-              checked={pets}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">pets</label>
-          </div>
-        </div>
-        {/* end of extras type */}
+        
+        
       </form>
     </section>
   );
