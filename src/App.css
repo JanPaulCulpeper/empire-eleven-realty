@@ -69,13 +69,36 @@
     background: var(--primaryColor);
     padding: 0.4rem 0.9rem;
     border: 3px solid var(--primaryColor);
+    border-radius: 5px;
     transition: var(--mainTransition);
     text-transform: uppercase;
     cursor: pointer;
   }
+
   .btn-primary:hover {
     background: transparent;
     color: var(--primaryColor);
+  }
+  .btn-search{
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainBlack);
+    background: var(--primaryColor);
+    padding: 0.4rem 0.9rem;
+    border: 3px solid var(--primaryColor);
+    border-radius: 5px;
+    transition: var(--mainTransition);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn-search:hover {
+    background: transparent;
+    color: var(--primaryColor);
+  }
+  .search-container{
+    background: transparent;
+    border: 3px solid black;
   }
   .loading {
     text-transform: capitalize;
@@ -195,12 +218,12 @@
   .banner h1 {
     font-size: 2.5rem;
   }
-  .banner div {
+  /* .banner div {
     width: 10rem;
     height: 5px;
     background: var(--primaryColor);
     margin: 1.7rem auto;
-  }
+  } */
   .banner p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -225,7 +248,7 @@
   /* Title */
   .section-title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   .section-title h4 {
     font-size: 2rem;
@@ -233,12 +256,12 @@
     text-transform: capitalize;
     margin-bottom: 1rem;
   }
-  .section-title div {
-    width: 5rem;
+  /* .section-title div {
+    width: 500rem;
     height: 5px;
     margin: 0 auto;
     background: var(--primaryColor);
-  }
+  } */
   /* end of Title */
   
   /* services */
@@ -554,9 +577,10 @@
   /* end of roomlist */
   /*  rooms fitler*/
   .filter-container {
-    padding: 5rem 0;
+    padding: .5rem 0;
   }
   .filter-form {
+    /* border: 1px solid #020202; */
     width: 60vw;
     margin: 0 auto;
     display: grid;
@@ -566,15 +590,22 @@
   }
   .form-group {
     text-transform: capitalize;
+    /* border: 1px solid #020202; */
+
   }
   .form-group label {
+    /* border: 1px solid #020202; */
+
     display: block;
     letter-spacing: var(--mainSpacing);
     margin-bottom: 0.5rem;
   }
   .form-control {
+    /* border: 1px solid #920000; */
+    height: 35px;
     width: 100%;
-    background: transparent;
+    border-radius: 5px;
+    background: rgba(184, 184, 200);
     font-size: 1rem;
   }
   .size-inputs {
