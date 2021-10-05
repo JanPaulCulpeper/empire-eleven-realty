@@ -4,11 +4,14 @@ import defaultImg from "../images/room-1.jpeg";
 import PropTypes from "prop-types";
 import { memo } from "react";
 import { FaBed, FaBath, FaRulerCombined } from 'react-icons/fa'
+import {commaNumber} from "comma-number"
 
 const Property = memo(({ property }) => {
   const { name, sp, images, price, capacity } = property;
-  
-  
+
+  const commaNumber = require('comma-number')
+
+
   return (
     <article className="property">
       <div className="img-container">
@@ -23,31 +26,34 @@ const Property = memo(({ property }) => {
       </div>
       <p className="property-info">{name}</p>
       <div className="columns">
-                <div className="column-rooms">
-                    <div className="room-count">
-                        <h6>{capacity}</h6>
-                    </div>
-                    <div className="room-icon">
-                        <h6><FaBed /></h6>
-                    </div>
-                </div>
-                <div className="column-bath">
-                    <div className="bath-count">
-                        <h6>{capacity} </h6>
-                    </div>
-                    <div className="bath-icon">
-                        <h6><FaBath /></h6>
-                    </div>
-                </div>
-                <div className="column-sqft">
-                    <div className="sqft-count">
-                        <h6>{capacity}  </h6>
-                    </div>
-                    <div className="sqft-icon">
-                        <h6><FaRulerCombined /></h6>
-                    </div>
-                </div>
-            </div>
+        <div className="price">
+          <h6>Price: ${commaNumber(price)}</h6>
+        </div>
+        <div className="column-rooms">
+          <div className="room-count">
+            <h6>{capacity}</h6>
+          </div>
+          <div className="room-icon">
+            <h6><FaBed /></h6>
+          </div>
+        </div>
+        <div className="column-bath">
+          <div className="bath-count">
+            <h6>{capacity} </h6>
+          </div>
+          <div className="bath-icon">
+            <h6><FaBath /></h6>
+          </div>
+        </div>
+        <div className="column-sqft">
+          <div className="sqft-count">
+            <h6>{capacity}  </h6>
+          </div>
+          <div className="sqft-icon">
+            <h6><FaRulerCombined /></h6>
+          </div>
+        </div>
+      </div>
     </article>
   );
 });

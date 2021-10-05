@@ -14,6 +14,7 @@ const Properties = () => {
                 </Banner>
             </Hero>
             <PropertiesContainer/>
+            
         </>
     );
 };

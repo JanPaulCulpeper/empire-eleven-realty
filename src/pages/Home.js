@@ -25,7 +25,7 @@ const Home = () => {
         <Services/>
         <About className='about' title="About" id="about"/>
         <Reviews className='reviews' title="Reviews" id="reviews"/>
-        <Foo />
+        {/* <Foo /> */}
         </>
     );
 };

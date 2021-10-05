@@ -7,6 +7,7 @@ import Properties from './pages/Properties';
 import Navbar from './components/Navbar/index';
 import { Route, Switch} from 'react-router-dom'
 import Sidebar from './components/Sidebar'
+import Foo from './components/Footer/index'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   <Route exact path="/properties/:sp" component={SingleProperty}/>
   <Route component={Error} />
   </Switch>
+  <Foo />
   </>;
 }
 
