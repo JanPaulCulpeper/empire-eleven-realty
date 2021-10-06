@@ -8,7 +8,7 @@ position: fixed;
 z-index: 999;
 width: 100%;
 height: 100%;
-background:rgba(0, 0, 0, .95);
+background:rgba(236, 236, 236, .95);
 display: grid;
 align-items: center;
 top: 0;
@@ -43,6 +43,7 @@ text-align: center;
 }
 `
 export const SidebarLink = styled(LinkS)`
+font-family: Proxima Nova;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -51,7 +52,7 @@ text-decoration: none;
 list-style: none;
 transition: 0.2s ease-in-out;
 text-decoration: none;
-color: #fff;
+color: black;
 cursor: pointer;
 
 &:hover{
@@ -60,6 +61,7 @@ cursor: pointer;
 }
 `
 export const SidebarButtonWrap = styled.div`
+font-family: Proxima Nova;
 display: flex;
 justify-content: center;
 `

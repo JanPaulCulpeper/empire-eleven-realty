@@ -21,8 +21,8 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="featured-properties" onClick={toggle}>Featured Properties</SidebarLink>
                     <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
                     <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-                    <SidebarLink to="reviews" onClick={toggle}>Clients Reviews</SidebarLink>
-                    <SidebarLink to="footer" onClick={toggle}>Contact</SidebarLink>
+                    <SidebarLink to="reviews" onClick={toggle}>Testimonials</SidebarLink>
+                    {/* <SidebarLink to="footer" onClick={toggle}>Contact</SidebarLink> */}
                 </SidebarMenu>
                 <SidebarButtonWrap>
                     <SidebarRoutes to="/properties">Properties</SidebarRoutes>

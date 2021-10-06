@@ -16,7 +16,9 @@ import {
   SocialIconLink,
 } from "./FooterElements";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import logo from "../../images/logoEER.svg";
+import logo from "../../images/logoEER1.svg";
+import clasificados from "../../images/clasificados.png"
+import findit from "../../images/findit.png"
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -40,10 +42,11 @@ const Footer = () => {
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink href="https://www.finditpr.com/agente/empire-eleven-realty-corp/288" target="_blank" aria-label="Twitter">
-                findit
+              <img src={findit} className="findit"/>
               </SocialIconLink>
               <SocialIconLink href="https://www.clasificadosonline.com/PartnersListingREID.asp?ID=41318" target="_blank" aria-label="Twitter">
-                clasificados
+              <img src={clasificados} className="findit"/>
+              
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

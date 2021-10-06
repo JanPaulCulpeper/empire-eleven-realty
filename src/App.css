@@ -5,12 +5,12 @@
   }
   :root {
     /* Empire Eleven Realty Logo Colors */
-    --EERGray: #B8B8C8;
+    --EERGray: #ececec;
     --EERRed: #C8202F;
     --EERBlue: #272160;
 
 
-    --primaryColor: #B8B8C8;
+    --primaryColor: #ececec;
     --mainWhite: #fff;
     --offWhite: #fafafa;
     --mainBlack: #222;
@@ -95,6 +95,10 @@
   .btn-search:hover {
     background: transparent;
     color: var(--primaryColor);
+  }
+  .search-container1{
+    background: transparent;
+    border: 3px solid black;
   }
   .search-container{
     background: transparent;
@@ -623,7 +627,7 @@
     height: 35px;
     width: 100%;
     border-radius: 5px;
-    background: rgba(184, 184, 200);
+    background: #ececec;
     font-size: 1rem;
   }
   .size-inputs {
@@ -673,25 +677,31 @@
   }
   .sliders1{
     padding: 0rem;
-  
+    border-radius: 3rem;
   }
-  .slide{
-    background-color: #B8B8C8;
+  .slide {
+    background-color: #ececec;
     height: 400px;
     padding: 2rem;
     display: flex;
+    /* border-radius: 3rem; */
+  }
+  .slideS{
+    padding: 2rem;
     border-radius: 3rem;
-
+    box-shadow: 10px 10px 5px grey;
   }
   .slide p{
-    font-family: Proxima Nova;
-    font-size: 30px;
+    font-family: sans-serif;
+    font-size: 45px;
     font-weight:bold;
     padding: 2rem;
     margin-top: 0rem;
+
   }
+
   .slide d{
-    font-size: 10px;
+    font-size: 25px;
     padding-bottom: 2rem;
   }
   .slide icon{
@@ -713,3 +723,9 @@
     line-height: 1;
     margin-bottom: 0.5em;
   }
+.findit{
+  /* border:2px solid #C8202F; */
+ max-width:7rem;
+ margin: 0;
+ padding: 0;
+}

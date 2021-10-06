@@ -5,7 +5,7 @@ export const InfoSectionContainer = styled.div`
   background: #fff;
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 125px 0;
   }
 `;
 
@@ -57,7 +57,7 @@ export const TopLine = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 `;
 
 export const Heading = styled.h1`
@@ -72,6 +72,8 @@ export const Heading = styled.h1`
   }
 `;
 export const Subtitle = styled.p`
+// border: 2px solid red;
+
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
@@ -79,28 +81,39 @@ export const Subtitle = styled.p`
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 export const ButtonWrap = styled.div`
+// border: 2px solid red;
+
   display: flex;
   justify-content: flex-start;
 `;
 export const ImgWrap = styled.div`
+// border: 2px solid red;
+
   max-width: 555px;
   height: 100%;
   padding: 30px;
   margin-top: 0;
 `;
 export const Img = styled.img`
+// border: 2px solid black;
+
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+
   
 `;
 
 export const SocialMedia = styled.section`
+// border: 2px solid blue;
   max-width: 1000px;
   width: 100%;
+
 `;
 
 export const SocialMediaWrap = styled.div`
+// border: 2px solid blue;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,17 +122,21 @@ export const SocialMediaWrap = styled.div`
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
+  
   }
 `;
 
 export const SocialIcons = styled.div`
+// border: 2px solid red;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 350px;
 `;
 
 export const SocialIconLink = styled.a`
+
   color: #000;
   font-size: 24px;
 `;

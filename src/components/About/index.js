@@ -24,7 +24,8 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./InfoElements";
-
+import clasificados from "../../images/clasificados.png"
+import findit from "../../images/findit.png"
 const InfoSection = ({
   
   lightBg,
@@ -79,11 +80,12 @@ const InfoSection = ({
               <SocialIconLink href="https://www.instagram.com/empireelevenrealty/?hl=es-la" target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="https://www.finditpr.com/agente/empire-eleven-realty-corp/288" target="_blank" aria-label="Twitter">
-                findit
+             <SocialIconLink href="https://www.finditpr.com/agente/empire-eleven-realty-corp/288" target="_blank" aria-label="Twitter">
+              <img src={findit} className="findit"/>
               </SocialIconLink>
               <SocialIconLink href="https://www.clasificadosonline.com/PartnersListingREID.asp?ID=41318" target="_blank" aria-label="Twitter">
-                clasificados
+              <img src={clasificados} className="findit"/>
+              
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

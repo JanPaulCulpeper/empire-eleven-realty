@@ -3,10 +3,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #222;
+// border:2px solid #C8202F;
+
+  background-color: #ececec;
 `;
 
 export const FooterWrap = styled.div`
+// border:2px solid #C8202F;
+
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
@@ -49,6 +53,7 @@ export const FooterLinkItems = styled.div`
   }
 `;
 export const FooterLinkTitle = styled.h1`
+
   font-size: 14px;
   margin-bottom: 16px;
 `;
@@ -65,11 +70,15 @@ export const FooterLink = styled(Link)`
 `;
 
 export const SocialMedia = styled.section`
+// border:2px solid #C8202F;
+
   max-width: 1000px;
   width: 100%;
 `;
 
 export const SocialMediaWrap = styled.div`
+// border:2px solid #C8202F;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,6 +91,8 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
+// border:2px solid #C8202F;
+transform: scale(1.5);
   color: #fff;
   justify-self: start;
   cursor: pointer;
@@ -94,18 +105,21 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const WebsiteRights = styled.small`
-  color: #fff;
+// border:2px solid #C8202F;
+
+  color: black;
   margin-bottom: 16px;
 `;
 
 export const SocialIcons = styled.div`
+// border:2px solid #C8202F;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 350px;
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
-  font-size: 24px;
+  color: black;
+  font-size: 28px;
 `;

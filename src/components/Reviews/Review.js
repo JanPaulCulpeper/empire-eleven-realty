@@ -8,14 +8,16 @@ const Review = ({ review }) => {
 
   return (
     <div className='slide'>
+      <div className="slideS">
       <p size>{name}</p>
-      <d>{message}</d>
+      <d>"{message}"</d>
       <div className="sideStars">
       <icon><FaStar size="2em"/> </icon>
       <icon><FaStar size="2em"/> </icon>
       <icon><FaStar size="2em"/> </icon>
       <icon><FaStar size="2em"/> </icon>
       <icon><FaStar size="2em"/> </icon>
+      </div>
       </div>
     </div>
   );

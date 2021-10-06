@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <Hero>
                 <Banner title="Empire Eleven Realty" subtitle="Elite company dedicated to the sale and rental of residential, commercial and industrial properties.">
-                <SearchContainer className="search-container">
+                <SearchContainer className="search-container1">
                
                </SearchContainer>
                     <Link to='/properties' className="btn-primary">

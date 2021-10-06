@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
-import logo from "./logo1.png";
+import logo from "../../images/logoEER1.svg";
 import {
   Nav,
   NavbarContainer,
@@ -90,13 +90,13 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Clients Reviews
+                Testimonials
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavButton>
+          {/* <NavButton>
             <NavLinks to="footer">Contact</NavLinks>
-          </NavButton>
+          </NavButton> */}
         </NavbarContainer>
       </Nav>
     </IconContext.Provider>
