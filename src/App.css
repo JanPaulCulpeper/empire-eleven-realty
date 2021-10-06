@@ -250,7 +250,7 @@
   }
   @media screen and (min-width: 992px) {
     .banner {
-      padding: 2rem 6rem;
+      padding: 2rem 1rem;
     }
     .banner h1 {
       font-size: 4rem;
@@ -278,11 +278,11 @@
   
   /* services */
   .services {
-    padding: 10rem 0;
-    min-height: calc(100vh - 66px);
+    padding: 2rem 0;
+    /* min-height: calc(100vh - 66px); */
   }
   .services {
-    padding: 10rem;
+    padding: 1rem;
     background: var(--offWhite);
     text-align: center;
   }
@@ -324,8 +324,8 @@
   /* featured rooms */
   
   .featured-properties {
-    padding: 10rem 0;
-    min-height: calc(100vh - 66px);
+    padding: 2rem 0;
+    /* min-height: calc(100vh - 66px); */
     
   }
   .featured-properties-center {
