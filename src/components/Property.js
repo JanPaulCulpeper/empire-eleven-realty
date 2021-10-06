@@ -7,7 +7,7 @@ import { FaBed, FaBath, FaRulerCombined } from 'react-icons/fa'
 import {commaNumber} from "comma-number"
 
 const Property = memo(({ property }) => {
-  const { name, sp, images, price, capacity } = property;
+  const { name, sp, images, price, bedRooms, bathRooms, size , status } = property;
 
   const commaNumber = require('comma-number')
 
@@ -17,8 +17,7 @@ const Property = memo(({ property }) => {
       <div className="img-container">
         <img src={images[0] || defaultImg} alt="single property" />
         <div className="price-top">
-          <h6>${price}</h6>
-          <p>per night</p>
+          <h6>{status}</h6>
         </div>
         <Link to={`/properties/${sp}`} className="btn-primary property-link">
           features
@@ -31,7 +30,7 @@ const Property = memo(({ property }) => {
         </div>
         <div className="column-rooms">
           <div className="room-count">
-            <h6>{capacity}</h6>
+            <h6>{bedRooms}</h6>
           </div>
           <div className="room-icon">
             <h6><FaBed /></h6>
@@ -39,7 +38,7 @@ const Property = memo(({ property }) => {
         </div>
         <div className="column-bath">
           <div className="bath-count">
-            <h6>{capacity} </h6>
+            <h6>{bathRooms} </h6>
           </div>
           <div className="bath-icon">
             <h6><FaBath /></h6>
@@ -47,7 +46,7 @@ const Property = memo(({ property }) => {
         </div>
         <div className="column-sqft">
           <div className="sqft-count">
-            <h6>{capacity}  </h6>
+            <h6>{size}  </h6>
           </div>
           <div className="sqft-icon">
             <h6><FaRulerCombined /></h6>

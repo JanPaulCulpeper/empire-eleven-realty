@@ -4,6 +4,7 @@ import Client from './Contentful';
 
 
 const PropertyContext = React.createContext();
+
 //<propertyContext.Provider value={}
 // propertyProvider = PropertyProvider
 // propertyContext = PropertyContext 

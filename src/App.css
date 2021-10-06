@@ -654,8 +654,33 @@
   }
   /* end of rooms fitler*/
 
-  .reviews{
+  /* .reviews{
     height: 400px;
     background-color: #fafafa;
-  }
+  } */
  
+
+  .reviews{
+    padding: 3rem 0.5rem;
+    height: 40rem;
+    background-color: #f71010;
+    border: 3px solid black;
+  text-align: center;
+   }
+  /* .carouselItem{
+    width: 300px;
+  } */
+  .sliders1{
+    padding: 0rem;
+    background-color: #020202;
+
+  }
+  .slide{
+
+    background-color: #020202;
+
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
