@@ -23,7 +23,6 @@ const Home = () => {
                         Search
                     </Link>
                 </Banner>
-
             </Hero>
                 <FeatureProperties />
                 <Services />

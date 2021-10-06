@@ -1,5 +1,4 @@
-
-
+import { FaStar} from "react-icons/fa";
 
 
 const Review = ({ review }) => {
@@ -7,13 +6,17 @@ const Review = ({ review }) => {
 
   const commaNumber = require('comma-number')
 
-  
-
   return (
     <div className='slide'>
       <p size>{name}</p>
-      <p>{message}</p>
-      <h6>{commaNumber(stars)} Stars</h6>
+      <d>{message}</d>
+      <div className="sideStars">
+      <icon><FaStar size="2em"/> </icon>
+      <icon><FaStar size="2em"/> </icon>
+      <icon><FaStar size="2em"/> </icon>
+      <icon><FaStar size="2em"/> </icon>
+      <icon><FaStar size="2em"/> </icon>
+      </div>
     </div>
   );
 };

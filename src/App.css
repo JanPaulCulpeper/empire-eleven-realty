@@ -654,33 +654,62 @@
   }
   /* end of rooms fitler*/
 
-  /* .reviews{
-    height: 400px;
-    background-color: #fafafa;
-  } */
- 
+  .whatsapp {
+    position: fixed;
+    top: 90%;
+    right: 0;
+  }
 
   .reviews{
     padding: 3rem 0.5rem;
     height: 40rem;
-    background-color: #f71010;
-    border: 3px solid black;
-  text-align: center;
+    background-color: var(--offWhite);
+    border: 3px solid #fff;
+    text-align: center;
    }
-  /* .carouselItem{
+  .carouselItem{
     width: 300px;
-  } */
+    background-color: #fafafa;
+  }
   .sliders1{
     padding: 0rem;
-    background-color: #020202;
-
+  
   }
   .slide{
-
-    background-color: #020202;
-
+    background-color: #B8B8C8;
+    height: 400px;
     padding: 2rem;
     display: flex;
-    align-items: center;
+    border-radius: 3rem;
+
+  }
+  .slide p{
+    font-family: Proxima Nova;
+    font-size: 30px;
+    font-weight:bold;
+    padding: 2rem;
+    margin-top: 0rem;
+  }
+  .slide d{
+    font-size: 10px;
+    padding-bottom: 2rem;
+  }
+  .slide icon{
+    color:gold;
+    size: 5em;
+    padding-right: 1rem;
+  
+  }
+  .sideStars{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+ 
+  h1-test {
+    font-family:sans-serif;
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.5em;
   }

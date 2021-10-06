@@ -73,17 +73,17 @@ const InfoSection = ({
               <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink href="https://www.facebook.com/Empire-Eleven-Realty-101287901893495/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink href="https://www.instagram.com/empireelevenrealty/?hl=es-la" target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                <FaTwitter />
+              <SocialIconLink href="https://www.finditpr.com/agente/empire-eleven-realty-corp/288" target="_blank" aria-label="Twitter">
+                findit
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
-                <FaLinkedin />
+              <SocialIconLink href="https://www.clasificadosonline.com/PartnersListingREID.asp?ID=41318" target="_blank" aria-label="Twitter">
+                clasificados
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

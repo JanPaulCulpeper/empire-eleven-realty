@@ -12,7 +12,7 @@ export const InfoSectionContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 900px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -51,7 +51,7 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `;
 export const TopLine = styled.p`
-  color: #4fcbe9;
+  color: #000;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -65,7 +65,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: #000;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -85,13 +85,15 @@ export const ButtonWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  padding: 30px;
+  margin-top: 0;
 `;
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  
 `;
-
 
 export const SocialMedia = styled.section`
   max-width: 1000px;
@@ -109,7 +111,6 @@ export const SocialMediaWrap = styled.div`
     flex-direction: column;
   }
 `;
-
 
 export const SocialIcons = styled.div`
   display: flex;

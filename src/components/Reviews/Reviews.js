@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import Review from "./Review";
 import Client from '../../Contentful'
@@ -63,7 +62,7 @@ formatData(items){
 
     return (
         <div className="reviews">
-        <h1 style={{ textAlign: "center" }}>Past Clients Reviews</h1>
+        <h1-test style={{ textAlign: "center" }}>Testimonials</h1-test>
           <div className="sliders1">
             <Carousel breakPoints={breakPoints}>
               {this.loading ? <Loading/> : reviewsItems}
@@ -75,5 +74,3 @@ formatData(items){
 }
 
 export default Reviews
-
-

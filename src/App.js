@@ -8,6 +8,8 @@ import Navbar from './components/Navbar/index';
 import { Route, Switch} from 'react-router-dom'
 import Sidebar from './components/Sidebar'
 import Foo from './components/Footer/index'
+import WhatsApp from 'react-whatsapp-widget'
+import 'react-whatsapp-widget/dist/index.css'
 
 function App() {
 
@@ -25,6 +27,9 @@ function App() {
   <Route exact path="/properties/:sp" component={SingleProperty}/>
   <Route component={Error} />
   </Switch>
+  <div className="whatsapp">
+  <WhatsApp message="Hello! Feel free to reach out! " companyName="Empire Eleven Realty" phoneNumber='' />
+  </div>
   <Foo />
   </>;
 }
