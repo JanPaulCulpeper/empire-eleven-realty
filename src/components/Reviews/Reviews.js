@@ -12,8 +12,9 @@ export default function Reviews() {
     return (
       
             <>
-              <h1 style={{ textAlign: "center" }}>Past Clients Reviews</h1>
+              
               <div className="reviews">
+              <h1 style={{ textAlign: "center" }}>Past Clients Reviews</h1>
                 <Carousel breakPoints={breakPoints}>
                   <Item>One</Item>
                   <Item>Two</Item>

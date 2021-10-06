@@ -1,0 +1,16 @@
+export const homeObjOne = {
+  id: "discover",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Endless Possibilities",
+  headLine: "With technology by your side, only your imagination is the limit!",
+  description: "Let us help you achieve the full potential of your business.",
+  buttonLabel: "Get Started",
+  imgStart: false,
+  img: require("../../images/ceo.jpg").default,
+  alt: "intro",
+  dark: true,
+  primary: false,
+  darkText: true,
+};
