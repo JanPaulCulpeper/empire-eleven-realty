@@ -278,9 +278,11 @@
   
   /* services */
   .services {
-    padding: 5rem 0;
+    padding: 10rem 0;
+    min-height: calc(100vh - 66px);
   }
   .services {
+    padding: 10rem;
     background: var(--offWhite);
     text-align: center;
   }
@@ -293,6 +295,7 @@
     grid-column-gap: 50px;
   }
   .service span {
+
     display: inline-block;
     color: var(--EERRed);
     font-size: 2.5rem;
@@ -321,9 +324,12 @@
   /* featured rooms */
   
   .featured-properties {
-    padding: 5rem 0;
+    padding: 10rem 0;
+    min-height: calc(100vh - 66px);
+    
   }
   .featured-properties-center {
+
     width: 80vw;
     margin: 0 auto;
     display: grid;
