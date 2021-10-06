@@ -4,9 +4,9 @@ import Home from './pages/Home'
 import SingleProperty from './pages/SingleProperty'
 import Error from './pages/Error'
 import Properties from './pages/Properties';
-import Navbar from './components/Navbar/index';
+// import Navbar2 from './components/Navbar2/index';
 import { Route, Switch} from 'react-router-dom'
-import Sidebar from './components/Sidebar'
+// import Sidebar from './components/Sidebar'
 import Foo from './components/Footer/index'
 import WhatsApp from 'react-whatsapp-widget'
 import 'react-whatsapp-widget/dist/index.css'
@@ -19,8 +19,8 @@ function App() {
     setIsOpen(!isOpen);
   };
   return <>
-  <Navbar toggle={toggle} />
-  <Sidebar isOpen={isOpen} toggle={toggle}/>
+  {/* <Navbar2 toggle={toggle} /> */}
+  {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
   <Switch>
   <Route exact path="/" component={Home}/>
   <Route exact path="/properties/" component={Properties}/>

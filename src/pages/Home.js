@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import Services from '../components/Services'
@@ -10,10 +11,19 @@ import About from '../components/About/index'
 import {
     homeObjOne
   } from "../components/About/data";
+import Navbar from '../components/Navbar/index'
+import Sidebar from '../components/Sidebar'
 
 const Home = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => {
+      setIsOpen(!isOpen);
+    };
+
     return (
         <>
+        <Navbar toggle={toggle} />
+         <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Hero>
                 <Banner title="Empire Eleven Realty" subtitle="Elite company dedicated to the sale and rental of residential, commercial and industrial properties.">
                 <SearchContainer className="search-container1">

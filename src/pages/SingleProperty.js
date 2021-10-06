@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import defaultBcg from '../images/room-1.jpeg'
 import Banner from '../components/Banner'
 import { Link } from 'react-router-dom'
 import { PropertyContext } from '../context'
 import StyledHero from '../components/StyledHero'
+import Navbar2 from '../components/Navbar2/index';
+
+
 
 export default class SingleProperty extends Component {
+
+  
+
 
     constructor(props)
     {
@@ -30,12 +36,9 @@ export default class SingleProperty extends Component {
         }
         const {name,
             description,
-            capacity,
             size,
             price,
             extras,
-            breakfast,
-            pets,
             images} = property;
 
 
@@ -43,6 +46,10 @@ export default class SingleProperty extends Component {
         
             return (
               <>
+
+
+              
+         <Navbar2 />
                 <StyledHero img={images[0] || this.state.defaultBcg}>
                   <Banner title={`${name} property`}>
                     <Link to="/properties" className="btn-primary">
@@ -65,12 +72,7 @@ export default class SingleProperty extends Component {
                       <h3>info</h3>
                       <h6>price : ${price}</h6>
                       <h6>size : {size} SQFT</h6>
-                      <h6>
-                        max capacity :
-                        {capacity > 1 ? `${capacity} people` : `${capacity} person`}
-                      </h6>
-                      <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-                      <h6>{breakfast && "free breakfast included"}</h6>
+                  
                     </article>
                   </div>
                 </section>
