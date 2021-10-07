@@ -43,7 +43,7 @@ text-align: center;
 }
 `
 export const SidebarLink = styled(LinkS)`
-font-family: Proxima Nova;
+font-family: sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;

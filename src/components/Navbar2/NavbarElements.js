@@ -70,7 +70,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 export const NavLinks = styled(LinkS)`
-font-family: Proxima Nova;
+font-family: sans-serif;
   color: #000;
   display: flex;
   align-items: center;

@@ -51,6 +51,7 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `;
 export const TopLine = styled.p`
+
   color: #000;
   font-size: 16px;
   line-height: 16px;
@@ -96,10 +97,11 @@ export const ImgWrap = styled.div`
 `;
 export const Img = styled.img`
 // border: 2px solid black;
-
+border-radius: 3rem;
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  box-shadow: 5px 5px 5px #ccc;
 
   
 `;

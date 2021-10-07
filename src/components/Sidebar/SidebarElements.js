@@ -61,7 +61,7 @@ cursor: pointer;
 }
 `
 export const SidebarButtonWrap = styled.div`
-font-family: Proxima Nova;
+font-family: sans-serif;
 display: flex;
 justify-content: center;
 `
