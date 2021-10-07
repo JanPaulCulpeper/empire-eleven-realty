@@ -5,7 +5,7 @@ export const homeObjOne = {
   lightTextDesc: false,
   topLine: "Josean López Sekulits",
   headLine: "Permiteme ayudarte a encontrar la propiedad de tus suenos!",
-  description: "Empresa élite dedicada a la venta y alquiler de propiedades residenciales, comerciales e industriales.¡DM para vender y/o buscar tu propiedad; y para más información llamar al 787-607-6686 o escribirnos un email al empire11realty@gmail.com",
+  description: "Empresa élite dedicada a la venta y alquiler de propiedades residenciales, comerciales e industriales.¡DM para vender y/o buscar tu propiedad; y para más información llamar al 787-607-6686 o escribirnos un email al empire11realty@gmail.com!",
   imgStart: false,
   img: require("../../images/ceo.jpg").default,
   alt: "intro",

@@ -50,13 +50,13 @@ export default class SingleProperty extends Component {
 
               
          <Navbar2 />
-                <StyledHero img={images[0] || this.state.defaultBcg}>
-                  <Banner title={`${name} property`}>
+                <div className="backToProperties">
+                 
                     <Link to="/properties" className="btn-primary">
                       back to properties
                     </Link>
-                  </Banner>
-                </StyledHero>
+                 </div>
+              
                 <section className="single-property">
                   <div className="single-property-images">
                     {defaultImages.map((item, index) => (

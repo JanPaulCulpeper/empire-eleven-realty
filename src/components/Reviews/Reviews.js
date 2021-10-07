@@ -62,7 +62,7 @@ formatData(items){
 
     return (
         <div className="reviews">
-        <h1-test style={{ textAlign: "center" }}>Testimonials</h1-test>
+        {/* <h1-test style={{ textAlign: "center" }}>Testimonials</h1-test> */}
           <div className="sliders1">
             <Carousel breakPoints={breakPoints}>
               {this.loading ? <Loading/> : reviewsItems}

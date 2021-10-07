@@ -28,7 +28,7 @@ function App() {
   <Route component={Error} />
   </Switch>
   <div className="whatsapp">
-  <WhatsApp message="Hello! Feel free to reach out! " companyName="Empire Eleven Realty" phoneNumber='' />
+  <WhatsApp message="Hello! Let's sell houses " companyName="Empire Eleven Realty" phoneNumber='+17876076686' textReplyTime='Typically replies within 30 minutes' />
   </div>
   <Foo />
   </>;
