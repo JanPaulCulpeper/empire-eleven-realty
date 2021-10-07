@@ -28,9 +28,9 @@ export default class SingleProperty extends Component {
         if(!property){
             return ( <div className = "error">
                 <h3>no such room could be found...</h3>
-                <link to = '/properties' className="btn-primary">
+                <Link to = '/properties' className="btn-primary">
                 back to properties
-                </link>
+                </Link>
             </div>
             );
         }
