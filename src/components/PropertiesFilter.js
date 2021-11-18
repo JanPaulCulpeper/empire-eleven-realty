@@ -99,7 +99,7 @@ const PropertiesFilter = ({ properties }) => {
         {/* end of status */}
         {/* BedRooms  */}
         <div className="form-group">
-          <label htmlFor="bedRooms">Bed Rooms</label>
+          <label htmlFor="bedRooms">Bedrooms</label>
           <select
             name="bedRooms"
             id="bedRooms"
@@ -113,7 +113,7 @@ const PropertiesFilter = ({ properties }) => {
         {/* end of BedRooms */}
         {/* BathRooms  */}
         <div className="form-group">
-          <label htmlFor="bathRooms">Bath Rooms</label>
+          <label htmlFor="bathRooms">Bathrooms</label>
           <select
             name="bathRooms"
             id="bathRooms"
