@@ -112,7 +112,7 @@ export const WebsiteRights = styled.small`
 `;
 
 export const SocialIcons = styled.div`
-// border:2px solid #C8202F;
+//  border:2px solid #C8202F;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,3 +123,4 @@ export const SocialIconLink = styled.a`
   color: black;
   font-size: 28px;
 `;
+

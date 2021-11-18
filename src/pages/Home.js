@@ -4,8 +4,6 @@ import Banner from '../components/Banner'
 import Services from '../components/Services'
 import { Link } from 'react-router-dom'
 import FeatureProperties from '../components/FeatureProperties'
-import PropertiesContainer from '../components/PropertiesContainer'
-import Reviews from '../components/Reviews/Reviews'
 import SearchContainer from '../components/SearchContainer'
 import About from '../components/About/index'
 import {
@@ -37,7 +35,7 @@ const Home = () => {
                 <FeatureProperties />
                 <Services />
                 <About {...homeObjOne} id="about"/>
-                <Reviews className='reviews' title="Reviews" id="reviews" />
+                {/* <Reviews className='reviews' title="Reviews" id="reviews" /> */}
             </>
             );
 };

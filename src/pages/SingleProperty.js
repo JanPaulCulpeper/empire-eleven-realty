@@ -1,10 +1,10 @@
-import React, { Component,useState } from 'react'
-import defaultBcg from '../images/room-1.jpeg'
-import Banner from '../components/Banner'
+import React, { Component } from 'react'
+import defaultBcg from '../images/room-1.svg'
 import { Link } from 'react-router-dom'
 import { PropertyContext } from '../context'
-import StyledHero from '../components/StyledHero'
 import Navbar2 from '../components/Navbar2/index';
+
+const commaNumber = require('comma-number')
 
 
 
@@ -27,7 +27,7 @@ export default class SingleProperty extends Component {
         const property = getProperty(this.state.sp);
         if(!property){
             return ( <div className = "error">
-                <h3>no such room could be found...</h3>
+                <h3>No such property could be found...</h3>
                 <Link to = '/properties' className="btn-primary">
                 back to properties
                 </Link>
@@ -70,17 +70,17 @@ export default class SingleProperty extends Component {
                     </article>
                     <article className="info">
                       <h3>info</h3>
-                      <h6>price : ${price}</h6>
-                      <h6>size : {size} SQFT</h6>
+                      <h6>• price : ${commaNumber(price)}</h6>
+                      <h6>• size : {commaNumber(size)} SQFT</h6>
                   
                     </article>
                   </div>
                 </section>
                 <section className="property-extras">
-                  <h6>extras </h6>
+                  <h3>extras </h3>
                   <ul className="extras">
                     {extras.map((item, index) => (
-                      <li key={index}>- {item}</li>
+                      <li  key={index}>• {item}</li>
                     ))}
                   </ul>
                 </section>

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import {  FaForward, FaSearch, FaRegCommentDots, FaMoneyBillAlt } from "react-icons/fa";
 import Title from "./Title";
+
+
 export default class Services extends Component {
   state = {
     services: [
@@ -45,7 +47,13 @@ export default class Services extends Component {
             );
           })}
         </div>
+        <div className="ReviewUs">
+        <a  className="btn-primary1" href="https://www.facebook.com/Empire-Eleven-Realty-101287901893495/reviews/?ref=page_internal"  aria-label="Facebook">
+                        Review Us  
+         </a>
+        </div>
       </section>
+      
     );
   }
 }

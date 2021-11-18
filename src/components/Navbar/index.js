@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome} >
-            <img src={logo} className="navbar-logo"/>
+            <img src={logo} className="navbar-logo" alt="logo"/>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -82,7 +82,7 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
+              {/* <NavLinks
                 to="reviews"
                 smooth={true}
                 duration={500}
@@ -91,14 +91,27 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Testimonials
-              </NavLinks>
+              </NavLinks> */}
             </NavItem>
           </NavMenu>
           {/* <NavButton>
             <NavLinks to="footer">Contact</NavLinks>
           </NavButton> */}
+         
         </NavbarContainer>
+        <NavButton>
+            <NavButtonLink>
+            <a className="NavButtCall" href="tel:787-607-6686">Call us</a>
+            </NavButtonLink>
+            </NavButton>
+            <NavButton>
+            <NavButtonLink>
+            <a className="NavButtCall" href="mailto: empire11realty@gmail.com">Email us</a>
+            </NavButtonLink>
+            </NavButton>
+  
       </Nav>
+      
     </IconContext.Provider>
   );
 };

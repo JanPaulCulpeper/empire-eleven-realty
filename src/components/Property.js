@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import defaultImg from "../images/room-1.jpeg";
+import defaultImg from "../images/room-1.svg";
 import PropTypes from "prop-types";
 import { memo } from "react";
 import { FaBed, FaBath, FaRulerCombined } from 'react-icons/fa'
-import {commaNumber} from "comma-number"
 
 const Property = memo(({ property }) => {
-  const { name, sp, images, price, bedRooms, bathRooms, size , status } = property;
+  const { name, sp, images, price, bedRooms, bathRooms, size, status } = property;
 
   const commaNumber = require('comma-number')
 
@@ -46,7 +45,11 @@ const Property = memo(({ property }) => {
         </div>
         <div className="column-sqft">
           <div className="sqft-count">
-            <h6>{size}  </h6>
+            <h6>{commaNumber(size)}
+              <sqft className="sqft">
+              &nbsp; sqft
+              </sqft>
+            </h6>
           </div>
           <div className="sqft-icon">
             <h6><FaRulerCombined /></h6>

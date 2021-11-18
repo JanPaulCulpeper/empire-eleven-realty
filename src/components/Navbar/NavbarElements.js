@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   margin-top: -80px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   font-size: 1rem;
   position: sticky;
   top: 0;
@@ -85,19 +85,32 @@ font-family: sans-serif;
 `;
 
 export const NavButton = styled.nav`
-  display: flex;
-  align-items: center;
+// border: 2px solid red;
+  // display: flex;
+  // align-items: center;
+  // padding:0!important;
+  // padding: 0px;
+  //  margin: 0px;
+  margin-left:20px;
+  margin-top: 0px;
+  height: 40px;
+ 
+
+  
+
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
-export const NavButtonLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #4fcbe9;
+export const NavButtonLink = styled.nav`
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+
+  background: #C8202F;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 5px 10px;
   color: #010606;
   font-size: 16px;
   outline: none;
@@ -113,3 +126,5 @@ export const NavButtonLink = styled(LinkR)`
   }
    
 `;
+
+

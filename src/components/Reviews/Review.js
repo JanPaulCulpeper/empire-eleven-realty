@@ -4,7 +4,7 @@ import { FaStar} from "react-icons/fa";
 const Review = ({ review }) => {
   const { name, stars, message, img  } = review;
 
-  const commaNumber = require('comma-number')
+  // const commaNumber = require('comma-number')
 
   return (
     <div className='slide'>

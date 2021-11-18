@@ -60,6 +60,12 @@
     font-weight: bold;
     margin-bottom: 0;
   }
+  .dream{
+    padding: 15px;
+    display: flex;
+    /* align-content: center; */
+    justify-content:center;
+  }
   .backToProperties{
     display: flex;
     /* align-content: center; */
@@ -88,6 +94,28 @@
     background: transparent;
     color: var(--primaryColor);
   }
+  .NavButtCall{
+    text-decoration: none;
+    color: var(--mainBlack);
+    
+  }
+.btn-primary1{
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--EERRed);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--EERRed);
+  border-radius: 5px;
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary1:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
   .btn-search{
     display: inline-block;
     text-decoration: none;
@@ -117,6 +145,10 @@
     text-transform: capitalize;
     text-align: center;
     margin-top: 3rem;
+  }
+  .loadGif {
+    text-align: center;
+   max-width: 200px;
   }
   .error {
     text-align: center;
@@ -219,13 +251,13 @@
   .defaultHero,
   .propertiesHero {
     min-height: calc(100vh - 66px);
-    background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+    background: url("./images/Background.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .propertiesHero {
-    background-image: url("./images/defaultBcg.jpeg");
+    background-image: url("./images/Background.jpg");
     min-height: 60vh;
   }
   /* End of Hero */
@@ -233,11 +265,10 @@
   .banner {
     display: inline-block;
     background: rgba(0, 0, 0, 0.5);
-    
     color: var(--mainWhite);
     padding: 2rem 1rem;
     text-align: center;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     letter-spacing: var(--mainSpacing);
   }
   .banner h1 {
@@ -320,6 +351,10 @@
   .services p {
     width: 80%;
     margin: 0 auto;
+  }
+  .ReviewUs{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
   @media screen and (min-width: 992px) {
     .services-center {
@@ -483,6 +518,10 @@
     display: flex;
     justify-content:space-around;
   }
+  .sqft{
+    font-weight: bold;
+    font-size: 12px;
+  }
 
 
   /* .property-bed-info {
@@ -520,7 +559,7 @@
     grid-column-gap: 50px;
   }
   .single-property-images img {
-    width: 100%;
+    width: 85%;
     display: block;
   }
   .single-property-info {
@@ -529,9 +568,14 @@
     grid-template-columns: 1fr;
     margin: 2rem auto;
   }
-  .desc,
+  .desc {
+    margin: 1rem 0;
+    
+  }
   .info {
     margin: 1rem 0;
+    border-left: 5px solid #a3a3a8;
+    padding-left: 1rem;
   }
   .desc h3 {
     text-transform: capitalize;
@@ -544,25 +588,45 @@
   .info h6 {
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
+    
   }
   
   .info h6 {
     font-weight: 300;
+    /* border: 1px solid #000000; */
+
   }
   .property-extras {
     width: 80vw;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 3rem auto;    
   }
+  .property-extras h3,
   .property-extras h6 {
+    
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
+    /* border: 1px solid #000000; */
+    
   }
   .extras {
+    
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    /* letter-spacing: var(--mainSpacing); */
+    /* border: 1px solid #000000; */
+    
+
+  }
+  .extraText{
+    font-weight: 300px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 992px) {
     .single-property-images,
@@ -570,6 +634,7 @@
     .property-extras {
       width: 95vw;
       max-width: 1170px;
+      
     }
     .single-property-info {
       display: grid;
@@ -578,6 +643,8 @@
     }
     .info {
       padding-left: 3rem;
+      /* border: 1px solid #000000; */
+      border-left: 5px solid #a3a3a8;
     }
   }
   /* end of single room*/
@@ -669,8 +736,9 @@
 
   .whatsapp {
     position: fixed;
-    top: 90%;
+    top: 85%;
     right: 0;
+ 
   }
 
   .reviews{

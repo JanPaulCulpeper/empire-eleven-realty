@@ -5,7 +5,6 @@ import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 import PropertiesContainer from '../components/PropertiesContainer'
 import Navbar2 from '../components/Navbar2/index';
-import Sidebar2 from '../components/Sidebar2'
 const Properties = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -20,7 +19,7 @@ const Properties = () => {
 
           {/* <Sidebar2 isOpen={isOpen} toggle={toggle}/> */}
             <Hero hero="propertiesHero"> 
-                <Banner title="Our Properties">
+                <Banner title="Let's make your dream come true">
                     <Link to='/' className="btn-primary">
                         Return Home
                     </Link>

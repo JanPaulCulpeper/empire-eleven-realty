@@ -4,9 +4,7 @@ import Home from './pages/Home'
 import SingleProperty from './pages/SingleProperty'
 import Error from './pages/Error'
 import Properties from './pages/Properties';
-// import Navbar2 from './components/Navbar2/index';
 import { Route, Switch} from 'react-router-dom'
-// import Sidebar from './components/Sidebar'
 import Foo from './components/Footer/index'
 import WhatsApp from 'react-whatsapp-widget'
 import 'react-whatsapp-widget/dist/index.css'
@@ -28,7 +26,7 @@ function App() {
   <Route component={Error} />
   </Switch>
   <div className="whatsapp">
-  <WhatsApp message="Hello! Let's sell houses " companyName="Empire Eleven Realty" phoneNumber='+17876076686' textReplyTime='Typically replies within 30 minutes' />
+  <WhatsApp message="Let's make your dream come true! " companyName="Empire Eleven Realty" phoneNumber='+17876076686' textReplyTime='Typically replies within 30 minutes'/>
   </div>
   <Foo />
   </>;

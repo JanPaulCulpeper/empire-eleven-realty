@@ -3,11 +3,6 @@ import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -15,7 +10,7 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import logo from "../../images/logoEER1.svg";
 import clasificados from "../../images/clasificados.png"
 import findit from "../../images/findit.png"
@@ -29,10 +24,14 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-            <img src={logo} className="navbar-logo"/>
+              <img src={logo} className="navbar-logo" alt="logo" />
             </SocialLogo>
+           
             <WebsiteRights>
-              sigloXXI © {new Date().getFullYear()} All rights reserved.
+            <div className="dream">
+              Let's make your dream come true
+            </div>
+              EmpireElevenRealty © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="https://www.facebook.com/Empire-Eleven-Realty-101287901893495/" target="_blank" aria-label="Facebook">
@@ -42,11 +41,11 @@ const Footer = () => {
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink href="https://www.finditpr.com/agente/empire-eleven-realty-corp/288" target="_blank" aria-label="Twitter">
-              <img src={findit} className="findit"/>
+                <img src={findit} className="findit" alt="findit" />
               </SocialIconLink>
               <SocialIconLink href="https://www.clasificadosonline.com/PartnersListingREID.asp?ID=41318" target="_blank" aria-label="Twitter">
-              <img src={clasificados} className="findit"/>
-              
+                <img src={clasificados} className="findit" alt="clasificado" />
+
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

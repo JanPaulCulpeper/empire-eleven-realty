@@ -9,8 +9,7 @@ export default class FeaturedProperties extends Component {
     //RoomContext = PropertyContext
     static contextType = PropertyContext
     render() {
-        //featuredRooms = featureProperties
-        //rooms = property
+     
        let { loading, featuredProperties: properties} = this.context;
       properties = properties.map(property => {
           return <Property key = {property.id} property={property}/>

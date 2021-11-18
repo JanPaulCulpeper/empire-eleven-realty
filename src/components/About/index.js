@@ -1,5 +1,4 @@
 import React from "react";
-// import { Button } from "./ButtonElement";
 import { animateScroll as scroll } from "react-scroll";
 import {
   InfoSectionContainer,
@@ -14,16 +13,12 @@ import {
   ButtonWrap,
   ImgWrap,
   Img,
-} from "./InfoElements";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import {
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
-  WebsiteRights,
   SocialIcons,
   SocialIconLink,
 } from "./InfoElements";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import clasificados from "../../images/clasificados.png"
 import findit from "../../images/findit.png"
 const InfoSection = ({
@@ -81,10 +76,10 @@ const InfoSection = ({
                 <FaInstagram />
               </SocialIconLink>
              <SocialIconLink href="https://www.finditpr.com/agente/empire-eleven-realty-corp/288" target="_blank" aria-label="Twitter">
-              <img src={findit} className="findit"/>
+              <img src={findit} className="findit" alt="findit"/>
               </SocialIconLink>
               <SocialIconLink href="https://www.clasificadosonline.com/PartnersListingREID.asp?ID=41318" target="_blank" aria-label="Twitter">
-              <img src={clasificados} className="findit"/>
+              <img src={clasificados} className="findit" alt="clasificados"/>
               
               </SocialIconLink>
             </SocialIcons>
