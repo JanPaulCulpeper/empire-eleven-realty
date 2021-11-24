@@ -23,7 +23,7 @@ const Home = () => {
         <Navbar toggle={toggle} />
          <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Hero>
-                <Banner title="Empire Eleven Realty" subtitle="Elite company dedicated to the sale and rental of residential, commercial and industrial properties.">
+                <Banner title="Empire Eleven Realty" subtitle="Elite company dedicated to the purchase, sale, and rental of residential, and commercial properties.">
                 <SearchContainer className="search-container1">
                
                </SearchContainer>

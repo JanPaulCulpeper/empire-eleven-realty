@@ -6,6 +6,8 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
+  NavButton,
+  NavButtonLink,
 
 } from "./NavbarElements";
 
@@ -92,6 +94,16 @@ const Navbar = ({ toggle }) => {
             <NavLinks to="footer">Contact</NavLinks>
           </NavButton> */}
         </NavbarContainer>
+        <NavButton>
+            <NavButtonLink>
+            <a className="NavButtCall" href="tel:787-607-6686">Call us</a>
+            </NavButtonLink>
+            </NavButton>
+            <NavButton>
+            <NavButtonLink>
+            <a className="NavButtCall" href="mailto: empire11realty@gmail.com">Email us</a>
+            </NavButtonLink>
+            </NavButton>
       </Nav>
     </IconContext.Provider>
   );

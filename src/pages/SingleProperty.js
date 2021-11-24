@@ -58,6 +58,7 @@ export default class SingleProperty extends Component {
                  </div>
               
                 <section className="single-property">
+                <p className="Name">{name}</p>
                   <div className="single-property-images">
                     {defaultImages.map((item, index) => (
                       <img key={index} src={item} alt={name} />
@@ -83,6 +84,13 @@ export default class SingleProperty extends Component {
                       <li  key={index}>• {item}</li>
                     ))}
                   </ul>
+                </section>
+                <section className="NavButton">
+                
+            <a className="NavButtCalls" href="tel:787-607-6686">Call us</a>
+        
+            <a className="NavButtCalls" href="mailto: empire11realty@gmail.com">Email us</a>
+          
                 </section>
               </>
             );

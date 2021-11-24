@@ -99,6 +99,34 @@
     color: var(--mainBlack);
     
   }
+  .NavButton{
+    margin-left:26%;
+    margin-top: 0px;
+    height: 40px;
+    padding-bottom: 50px;
+  }
+  .NavButtCalls{
+    border-radius: 5px;
+    margin-left: 10px;
+    
+      background: var(--primaryColor);
+      white-space: nowrap;
+      padding: 5px 10px;
+      color: #010606;
+      font-size: 20px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      text-decoration: none;
+  }
+      .NavButtCalls:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+      }
+    
+  
 .btn-primary1{
   display: inline-block;
   text-decoration: none;
@@ -805,4 +833,12 @@
  max-width:7rem;
  margin: 0;
  padding: 0;
+}
+.Name{
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 0;
 }

@@ -109,9 +109,7 @@ const Navbar = ({ toggle }) => {
             <a className="NavButtCall" href="mailto: empire11realty@gmail.com">Email us</a>
             </NavButtonLink>
             </NavButton>
-  
       </Nav>
-      
     </IconContext.Provider>
   );
 };
