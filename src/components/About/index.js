@@ -1,5 +1,5 @@
 import React from "react";
-import { animateScroll as scroll } from "react-scroll";
+// import { animateScroll as scroll } from "react-scroll";
 import {
   InfoSectionContainer,
   InfoWrapper,
@@ -38,9 +38,9 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+  // const toggleHom = () => {
+  //   scroll.scrollToTop();
+  // };
   
   return (
     <InfoSectionContainer lightBg={lightBg} id={id}>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './App.css';
 import Home from './pages/Home'
 import SingleProperty from './pages/SingleProperty'
@@ -11,11 +11,11 @@ import 'react-whatsapp-widget/dist/index.css'
 
 function App() {
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return <>
   {/* <Navbar2 toggle={toggle} /> */}
   {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
