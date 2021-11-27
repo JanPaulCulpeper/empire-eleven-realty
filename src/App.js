@@ -8,6 +8,7 @@ import { Route, Switch} from 'react-router-dom'
 import Foo from './components/Footer/index'
 import WhatsApp from 'react-whatsapp-widget'
 import 'react-whatsapp-widget/dist/index.css'
+import { Helmet } from 'react-helmet';
 
 function App() {
 
@@ -19,6 +20,11 @@ function App() {
   return <>
   {/* <Navbar2 toggle={toggle} /> */}
   {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
+<Helmet>
+  <title>Empire Eleven Realty  </title>
+    <meta name="description" content="Empire Eleven Realty, Elite company dedicated to the purchase, sale, and rental of residential, and commercial properties in Puerto Rico"/>
+    <meta name="keywords" content="Sell properties in Puerto Rico, Buy properties in Puerto Rico, Rent properties in Puerto Rico, Invest in properties in Puerto Rico, Search for properties in Puerto Rico"/>
+  </Helmet>  
   <Switch>
   <Route exact path="/" component={Home}/>
   <Route exact path="/properties/" component={Properties}/>

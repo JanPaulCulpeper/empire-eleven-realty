@@ -3,6 +3,7 @@ import defaultBcg from '../images/room-1.svg'
 import { Link } from 'react-router-dom'
 import { PropertyContext } from '../context'
 import Navbar2 from '../components/Navbar2/index';
+import { Helmet } from 'react-helmet';
 
 const commaNumber = require('comma-number')
 
@@ -48,7 +49,10 @@ export default class SingleProperty extends Component {
             return (
               <>
 
-
+            <Helmet>
+              <title>{name}</title>
+              <meta name="description" content={description}/>
+            </Helmet>
               
          <Navbar2 />
                 <div className="backToProperties">
