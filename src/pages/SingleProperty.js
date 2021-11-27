@@ -39,6 +39,7 @@ export default class SingleProperty extends Component {
             size,
             price,
             extras,
+            status,
             images} = property;
 
 
@@ -59,6 +60,7 @@ export default class SingleProperty extends Component {
               
                 <section className="single-property">
                 <p className="Name">{name}</p>
+                <p className="Name">{status}</p>
                   <div className="single-property-images">
                     {defaultImages.map((item, index) => (
                       <img key={index} src={item} alt={name} />
