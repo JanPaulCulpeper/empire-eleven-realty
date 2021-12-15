@@ -36,7 +36,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </SidebarButtonWrap>
                 <SidebarButtonWrap>
                 <SidebarR>
-                        <a className="NavButtCall" href="mailto: empire11realty@gmail.com">Email us</a>
+                        <a className="NavButtCall" href="mailto: bienesraices@empireelevenrealty.com">Email us</a>
                     </SidebarR>
                 </SidebarButtonWrap>
             </SidebarWrapper>

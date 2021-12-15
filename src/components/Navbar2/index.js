@@ -101,7 +101,7 @@ const Navbar = ({ toggle }) => {
             </NavButton>
             <NavButton>
             <NavButtonLink>
-            <a className="NavButtCall" href="mailto: empire11realty@gmail.com">Email us</a>
+            <a className="NavButtCall" href="mailto: bienesraices@empireelevenrealty.com">Email us</a>
             </NavButtonLink>
             </NavButton>
       </Nav>

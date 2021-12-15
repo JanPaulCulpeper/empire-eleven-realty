@@ -47,7 +47,7 @@ const Property = memo(({ property }) => {
           <div className="sqft-count">
             <h6>{commaNumber(size)}
               <sqft className="sqft">
-              &nbsp; sqft
+              &nbsp; sqm
               </sqft>
             </h6>
           </div>

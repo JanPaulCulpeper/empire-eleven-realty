@@ -78,7 +78,7 @@ export default class SingleProperty extends Component {
                     <article className="info">
                       <h3>info</h3>
                       <h6>• price : ${commaNumber(price)}</h6>
-                      <h6>• size : {commaNumber(size)} SQFT</h6>
+                      <h6>• size : {commaNumber(size)}<h7 style={{ fontSize: 10}}>SQM</h7></h6>
                   
                     </article>
                   </div>
@@ -95,7 +95,7 @@ export default class SingleProperty extends Component {
                 
             <a className="NavButtCalls" href="tel:787-607-6686">Call us</a>
         
-            <a className="NavButtCalls" href="mailto: empire11realty@gmail.com">Email us</a>
+            <a className="NavButtCalls" href="mailto: bienesraices@empireelevenrealty.com">Email us</a>
           
                 </section>
               </>
